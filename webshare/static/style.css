@@ -1,0 +1,25 @@
+body {
+    background-color: #ededed;
+}
+
+#container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    width: 1024px;
+    height: 244px;
+    background-repeat: no-repeat;
+    background-image: url('img/header_bg_yellow.png');
+}
+
+#logo {
+    width: 307px;
+    height: 182px;
+    float: left;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+    

@@ -1,9 +1,15 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title></title>
+    <link rel='stylesheet' type='text/css' href="/static/style.css" />
+    <link rel='stylesheet' type='text/css' href="/static/amarillo.css" />
 </head>
 <body>
-{% block content %} {% endblock %}
+<div id="container">
+{% block header %} {% endblock %}
+</div>
 </body>
 </html>
