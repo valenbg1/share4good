@@ -1,9 +1,108 @@
-#welcome_image {
-    background-image: url('img/index.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 770px;
-    height: 670px;
+body {
+    background: url('img/indexbackground.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#cajaInicio {
+    background-image: url('img/yellowzoneindex.png');
     margin-left: auto;
     margin-right: auto;
+    width: 695px;
+    height: 365px;
+    padding: 97px;
+    margin-left: 143px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Carga de imagenes y efecto de cambio */
+
+.mleft {
+        margin-left: 20px;
+}
+
+#about {
+    background-image: url('img/navindex/1n.png');
+    width: 100px;
+    height: 150px;
+    background-repeat: no-repeat;
+    margin-top: 130px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+#about:hover {
+    background-image: url('img/navindex/1.png');
+}
+
+#empresa {
+    background-image: url('img/navindex/2n.png');
+    width: 100px;
+    height: 183px;
+    background-repeat: no-repeat;
+    margin-top: 79px;
+    float: left;
+}
+
+#empresa:hover {
+    background-image: url('img/navindex/2.png');
+}
+
+#ingenieros {
+    background-image: url('img/navindex/3n.png');
+    width: 100px;
+    height: 234px;
+    background-repeat: no-repeat;
+    margin-top: 28px;
+    float: left;
+}
+
+#ingenieros:hover {
+    background-image: url('img/navindex/3.png');
+}
+
+#asociaciones {
+    background-image: url('img/navindex/4n.png');
+    width:  100px;
+    height: 299px;
+    background-repeat: no-repeat;
+    margin-top: -34px;
+    float: left;
+}
+
+#asociaciones:hover {
+    background-image: url('img/navindex/4.png');
+}
+
+#ong {
+    background-image: url('img/navindex/5n.png');
+    width: 100px;
+    height: 334px;
+    background-repeat: no-repeat;
+    margin-top: -73px;
+    float: left;
+}
+
+#ong:hover {
+    background-image: url('img/navindex/5.png');
+}
+
+#investigadores {
+    background-image: url('img/navindex/6n.png');
+    width: 100px;
+    height: 383px;
+    background-repeat: no-repeat;
+    margin-top: -123px;
+    float: left;
+    margin-left: -5px;
+}
+
+#investigadores:hover {
+    background-image: url('img/navindex/6.png');
 }
