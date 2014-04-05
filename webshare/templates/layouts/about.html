@@ -1,4 +1,5 @@
 {% extends "layouts/masterfile.html" %}
+{% load staticfiles %}
 
 {% block header %}
 <header>
@@ -9,10 +10,10 @@
 {% block nav %}
 <nav>
 <ul id="nav">
-    <li><a href="/webshare/about" target="_self" title="Quienes somos"><img src="/static/img/boton_quienes.png" width=48 height=48></a></li>
-    <li><img src="/static/img/boton_empresa.png" width=48 height=48></li>
-    <li><img src="/static/img/boton_ingenieros.png" width=48 height=48></li>
-    <li><img src="/static/img/boton_asociaciones.png" width=48 height=48></li>
+    <li><a href="/webshare/about" target="_self" title="Quienes somos"><img src={% static "img/boton_quienes.png" %} width=48 height=48></a></li>
+    <li><a href="/webshare/empresa" target="_self" title="Empresas"><img src={% static "img/boton_empresa.png" %} width=48 height=48></a></li>
+    <li><a href="/webshare/ingenieros" target="_self" title="Ingenieros"><img src={% static "img/boton_ingenieros.png" %}  width=48 height=48></a></li>
+    <li><a href="/webshare/asociaciones" target="_self" title="Asociaciones"><img src={% static "img/boton_asociaciones.png" %} width=48 height=48></a></li>
 </ul>
 </nav>
 {% endblock %}

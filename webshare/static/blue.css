@@ -1,0 +1,19 @@
+header {
+    width: 1024px;
+    height: 244px;
+    background-repeat: no-repeat;
+    background-image: url('img/header_bg_blue.png');
+}
+
+footer {
+    width: 1024px;
+    height: 98px;
+    background-repeat: no-repeat;
+    background-image: url('img/footer_bg_blue.png');
+}
+
+hr {
+    border-color: #5cd6cd;
+    background-color: #5cd6cd;
+    height: 5px;
+}

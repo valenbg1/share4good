@@ -14,20 +14,6 @@ body {
     background-color: #ededed;
 }
 
-header {
-    width: 1024px;
-    height: 244px;
-    background-repeat: no-repeat;
-    background-image: url('img/header_bg_yellow.png');
-}
-
-footer {
-    width: 1024px;
-    height: 98px;
-    background-repeat: no-repeat;
-    background-image: url('img/footer_bg_yellow.png');
-}
-
 .font {
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -83,4 +69,14 @@ h1 {
 
 .quienessomos1 {
     margin-right: 156px;
+}
+
+.center {
+    text-align: center;
+}
+
+#registro_aso {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 25px;
 }

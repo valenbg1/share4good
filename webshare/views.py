@@ -4,5 +4,11 @@ from django.shortcuts import render_to_response
 def index(request):
     return render_to_response('layouts/index.html')
 
-def master(request):
-    return render_to_response('layouts/master.html')
+def about(request):
+    return render_to_response('layouts/about.html')
+
+def asociaciones(request):
+    return render_to_response('layouts/asociaciones.html')
+
+def investigadores(request):
+    return render_to_response('layouts/investigadores.html')

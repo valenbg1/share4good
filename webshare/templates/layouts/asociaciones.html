@@ -1,0 +1,48 @@
+{% extends "layouts/masterfile_red.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<header>
+    <a href="/webshare/index" target="_self" title="Share For Good" alt="logo"><div id="logo"></div></a>
+</header>
+{% endblock %}
+
+{% block nav %}
+<nav>
+<ul id="nav">
+    <li><a href="/webshare/about" target="_self" title="Quienes somos"><img src="/static/img/boton_quienes.png" width=48 height=48></a></li>
+    <li><a href="/webshare/empresa" target="_self" title="Empresas"><img src="/static/img/boton_empresa.png" width=48 height=48></a></li>
+    <li><a href="/webshare/ingenieros" target="_self" title="Ingenieros"><img src="/static/img/boton_ingenieros.png" width=48 height=48></a></li>
+    <li><a href="/webshare/asociaciones" target="_self" title="Asociaciones"><img src="/static/img/boton_asociaciones.png" width=48 height=48></a></li>
+</ul>
+</nav>
+{% endblock %}
+
+{% block elem1 %}
+<h1 class="quienessomos1">Asociaciones</h1>
+
+<div id="about_info" class="font">
+<p>Si eres una ONG dedicada a la cooperación al desarrollo, este es tu sitio. Aquí tendrás, con la misma filosofía que en el ámbito médico, un apartado en el que poder subir los proyectos de ingeniería que queráis realizar (bien para conseguir financiación, o directamente un profesional del sector que esté dispuesto a colaborar).</p>
+
+<p>Sólo tienes que registrarte y tendrás acceso a tu propio perfil Share For Good.</p>
+
+<p>Pincha en el botón para ir directamente al registro y ¡No pierdas ni un segundo más!</p>
+
+{% endblock %}
+
+{% block elem2 %}
+<div class="center" id="registro_aso"><img src={% static "img/registro.png" %} width=250></div>
+<hr>
+</div>
+
+{% endblock %}
+
+{% block elem3 %}
+{% endblock %}
+
+{% block footer %}
+<div class="clear"></class>
+<footer>
+</footer>
+{% endblock %}
+

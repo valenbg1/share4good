@@ -1,0 +1,13 @@
+header {
+    width: 1024px;
+    height: 244px;
+    background-repeat: no-repeat;
+    background-image: url('img/header_bg_yellow.png');
+}
+
+footer {
+    width: 1024px;
+    height: 98px;
+    background-repeat: no-repeat;
+    background-image: url('img/footer_bg_yellow.png');
+}
