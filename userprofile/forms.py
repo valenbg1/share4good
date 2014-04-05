@@ -8,6 +8,10 @@ class RoleElectionForm(forms.Form):
          ('org','Organizacion')]
 
     role = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
+    
+class NewInversionForm(forms.Form):
+    presupuesto = forms.DecimalField(widget=forms.NumberInput(attrs=dict(required=True, max_length=9, min_value=0)), label=_("Presupuesto"))
+    descripcion = forms.CharField(widget=forms.TextInput(), label=_("Descripcion"))
        
 class UserRegistrationForm(forms.Form):
     username = forms.RegexField(regex=r'^\w+$', widget=forms.TextInput(attrs=dict(required=True, max_length=30)), label=_("Username"), error_messages={ 'invalid': _("This value must contain only letters, numbers and underscores.") })

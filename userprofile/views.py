@@ -106,10 +106,49 @@ def register_success(request):
 def logout_page(request):
     logout(request)
     return HttpResponseRedirect('/')
+    
+@login_required
+def new_inversion(request):
+    if request.method == 'POST':
+        form = NewInversionForm(request.POST)
+        if form.is_valid():
+            presupuesto = form.cleaned_data['presupuesto']
+            descripcion = form.cleaned_data['descripcion']
+            
+            userProf = UserProfile.objects.get(user=request.user)
+            
+            inv = Inversion(org = userProf.is_organiz, presupuesto = presupuesto, descripcion = descripcion)
+            inv.save()
+            
+            return HttpResponseRedirect('/home')
+    else:
+        form = NewInversionForm()
+    variables = RequestContext(request, {
+    'form': form
+    })
+ 
+    return render_to_response(
+    'registration/register.html',
+    variables,
+    )
  
 @login_required
 def home(request):
-    return render_to_response(
-    'home.html',
-    { 'user': request.user }
-    )
+    userProf = UserProfile.objects.get(user=request.user)
+    
+    if userProf.is_usuario is not None:
+        return render_to_response(
+        'home.html',
+        { 'user': request.user }
+        )
+    else:
+        try:
+            orgInv = Inversion.objects.filter(org=(userProf.is_organiz_id))
+        except Inversion.DoesNotExist:
+            orgInv = None
+    
+        return render_to_response(
+        'home-org.html',
+        { 'user': request.user,
+          'inversion_list': orgInv}
+        )

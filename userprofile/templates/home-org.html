@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Django{% endblock %}
+{% block head %}Welcome Organization!{% endblock %}
+{% block content %}
+    <p>Welcome {{ user.username }} !!!</p>
+    
+    <a href="/new_inversion/">Nuevo proyecto</a>
+    
+    {% if inversion_list %}
+    <p>Lista proyectos:</p><br>
+    <ul>
+    {% for inversion in inversion_list %}
+        <li><p>Presupuesto: {{ inversion.presupuesto }}, Descripcion: {{ inversion.descripcion }}</p></li>
+    {% endfor %}
+    </ul>
+    {% else %}
+    <p>No inversions are available.</p>
+    {% endif %}
+    
+    <a href="/logout/">Logout</a>
+{% endblock %}

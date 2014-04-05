@@ -20,4 +20,5 @@ urlpatterns = patterns('',
     url(r'^register_org/$', register_org),
     url(r'^register/success/$', register_success),
     url(r'^home/$', home),
+    url(r'^new_inversion/$', new_inversion),
 )
