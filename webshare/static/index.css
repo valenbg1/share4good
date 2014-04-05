@@ -1,0 +1,9 @@
+#welcome_image {
+    background-image: url('img/index.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 770px;
+    height: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
