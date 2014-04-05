@@ -4,9 +4,31 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.views.decorators.csrf import csrf_protect
 from django.shortcuts import render_to_response
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from userprofile.models import *
+ 
+@csrf_protect
+def register(request):
+    if request.method == 'POST':
+        form = RoleElectionForm(request.POST)
+        if form.is_valid():
+            role = form.cleaned_data['role']
+            
+            if role == 'user':
+                return HttpResponseRedirect('/register_user')
+            else:
+                return HttpResponseRedirect('/register_org')
+    else:
+        form = RoleElectionForm()
+    variables = RequestContext(request, {
+    'form': form
+    })
+ 
+    return render_to_response(
+    'registration/register.html',
+    variables,
+    )
  
 @csrf_protect
 def register_user(request):
