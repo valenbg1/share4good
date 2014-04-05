@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webshare',
+    'userprofile',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,4 +83,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
