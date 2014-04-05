@@ -1,6 +1,7 @@
-# Authors
+Authors
+==================
 
-This software is created based on an idea presented in HackForGood (H4G) Madrid 2014:
+This website was created based on an idea presented in HackForGood (H4G) Madrid 2014:
 
 * José Bardera Ayala        |   Graphics designer   |                                   |   
 
@@ -15,4 +16,4 @@ This software is created based on an idea presented in HackForGood (H4G) Madrid 
 * Miguel Dorta              |   Software desginer   |   dortamiguel@gmail.com           |   https://github.com/ellipticaldoor
 
   
-###### H4G Madrid 2014.
+###### H4G Madrid 2014. ######
