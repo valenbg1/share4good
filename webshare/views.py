@@ -21,3 +21,6 @@ def ingenieros(request):
 
 def ong(request):
     return render_to_response('layouts/ong.html')
+
+def cienmil(request):
+    return render_to_response('layouts/cienmil.html')

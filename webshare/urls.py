@@ -8,4 +8,5 @@ urlpatterns = patterns('',
     url(r'^empresa/$', 'webshare.views.empresa'),
     url(r'^ingenieros/$', 'webshare.views.ingenieros'),
     url(r'^ong/$', 'webshare.views.ong'),
+    url(r'^cienmil/$', 'webshare.views.cienmil'),
 ) 
