@@ -2,19 +2,15 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Usuario(models.Model):
-    uid = models.CharField(max_length=20)
     nombre = models.CharField(max_length=30)
     apellidos = models.CharField(max_length=60)
-    email = models.EmailField()
     imagen = models.URLField()
     telefono = models.IntegerField()
     web = models.CharField(max_length=60)
     descripcion = models.TextField()
 
 class Organizacion(models.Model):
-    uid = models.CharField(max_length=30)
     nombre = models.CharField(max_length=30)
-    email = models.EmailField()
     logotipo = models.URLField()
     telefono = models.IntegerField()
     web = models.URLField()
@@ -23,8 +19,8 @@ class Organizacion(models.Model):
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
-    is_usuario = models.ForeignKey(Usuario, related_name='log_info')
-    is_organiz = models.ForeignKey(Organizacion, related_name='log_info')
+    is_usuario = models.ForeignKey(Usuario, null=True, related_name='log_info')
+    is_organiz = models.ForeignKey(Organizacion, null=True, related_name='log_info')
 
 class Inversion(models.Model):
     org = models.ForeignKey(Organizacion, related_name='inversiones')

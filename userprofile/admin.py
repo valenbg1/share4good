@@ -1,3 +1,7 @@
 from django.contrib import admin
+from userprofile.models import *
 
-# Register your models here.
+admin.site.register(Usuario)
+admin.site.register(Organizacion)
+admin.site.register(UserProfile)
+admin.site.register(Inversion)
