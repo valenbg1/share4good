@@ -80,3 +80,11 @@ h1 {
     margin-bottom: 100px;
     margin-right: 25px;
 }
+
+#empimg {
+    width: 1023px;
+    height: 667px;
+    background-image: url('img/imgfondoemp.png');
+    margin-bottom: 30px;
+    padding-top: 1px;
+}
