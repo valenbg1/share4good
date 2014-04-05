@@ -1,6 +1,8 @@
 {% extends "layouts/masterfile_blue.html" %}
 {% load staticfiles %}
 
+{% block title %} Share For Good - Investigadores {% endblock %}
+
 {% block header %}
 <header>
     <a href="/webshare/index" target="_self" title="Share For Good" alt="logo"><div id="logo"></div></a>
@@ -19,10 +21,10 @@
 {% endblock %}
 
 {% block elem1 %}
-<h1 class="quienessomos1">Asociaciones</h1>
+<h1 class="quienessomos1">Investigadores</h1>
 
 <div id="about_info" class="font">
-<p>Si eres una ONG dedicada a la cooperación al desarrollo, este es tu sitio. Aquí tendrás, con la misma filosofía que en el ámbito médico, un apartado en el que poder subir los proyectos de ingeniería que queráis realizar (bien para conseguir financiación, o directamente un profesional del sector que esté dispuesto a colaborar).</p>
+<p>Si eres un grupo o investigador particular, bienvenido. Este espacio está dedicado a que toda persona de este ámbito pueda subir un proyecto en el que le gustaría trabajar (bien para buscar financiación, conseguir un acuerdo con alguna fundación...), o en el que ya está trabajando (simplemente para informar sobre sus avances, o seguir buscando apoyos).</p>
 
 <p>Sólo tienes que registrarte y tendrás acceso a tu propio perfil Share For Good.</p>
 
@@ -31,7 +33,7 @@
 {% endblock %}
 
 {% block elem2 %}
-<div class="center" id="registro_aso"><img src={% static "img/registro.png" %} width=250></div>
+<div class="center" id="registro_bot"><img src={% static "img/registro_blue.png" %} width=250></div>
 <hr>
 </div>
 
