@@ -28,7 +28,7 @@ body {
 
 #about {
     background-image: url('img/navindex/1n.png');
-    width: 100px;
+    width: 107px;
     height: 150px;
     background-repeat: no-repeat;
     margin-top: 130px;
@@ -100,7 +100,7 @@ body {
     background-repeat: no-repeat;
     margin-top: -123px;
     float: left;
-    margin-left: -5px;
+    margin-left: -12px;
 }
 
 #investigadores:hover {

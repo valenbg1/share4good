@@ -4,10 +4,19 @@
 <html>
 <head>
     <title>Share For Good - Página principal</title>
-    <link rel='stylesheet' type='text/css' href="/static/index.css" />
+    <link rel='stylesheet' type='text/css' href={% static "index.css" %} />
 </head>
 <body>
-<div id="welcome_image">
+<div id="cajaInicio">
+    <img src={% static "img/logo.png" %} width="270" />
+    <div class="clear"></div>
+    
+    <a href="/webshare/about" target="_self"><div id="about"></div></a>
+    <a href="/webshare/empresa" target="_self"><div id="empresa" class="mleft"></div></a>
+    <a href="/webshare/ingenieros" target="_self"><div id="ingenieros" class="mleft"></div></a>
+    <a href="/webshare/asociaciones" target="_self"><div id="asociaciones" class="mleft"></div></a>
+    <a href="/webshare/ong" target="_self"><div id="ong" class="mleft"></div></a>
+    <a href="/webshare/investigadores" target="_self"><div id="investigadores" class="mleft"></div></a>
 </div>
 </body>
 </html>
