@@ -12,3 +12,9 @@ def asociaciones(request):
 
 def investigadores(request):
     return render_to_response('layouts/investigadores.html')
+
+def empresa(request):
+    return render_to_response('layouts/empresa.html')
+
+def ingenieros(request):
+    return render_to_response('layouts/ingenieros.html')
