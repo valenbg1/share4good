@@ -2,17 +2,24 @@ body {
     background-color: #ededed;
 }
 
-#container {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#header {
+header {
     width: 1024px;
     height: 244px;
     background-repeat: no-repeat;
     background-image: url('img/header_bg_yellow.png');
+}
+
+footer {
+    width: 1024px;
+    height: 98px;
+    background-repeat: no-repeat;
+    background-image: url('img/footer_bg_yellow.png');
+}
+
+#container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logo {
@@ -22,4 +29,9 @@ body {
     margin-left: 23px;
     margin-top: 20px;
 }
-    
+
+#aboutimg {
+    width: 1022px;
+    height: 667px;
+    background-image: url('img/contentabout.png');
+}
