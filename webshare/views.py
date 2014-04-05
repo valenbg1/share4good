@@ -18,3 +18,6 @@ def empresa(request):
 
 def ingenieros(request):
     return render_to_response('layouts/ingenieros.html')
+
+def ong(request):
+    return render_to_response('layouts/ong.html')

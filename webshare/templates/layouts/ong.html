@@ -1,7 +1,7 @@
-{% extends "layouts/masterfile_red.html" %}
+{% extends "layouts/masterfile_blue.html" %}
 {% load staticfiles %}
 
-{% block title %} Share For Good - Asociaciones {% endblock %}
+{% block title %} Share For Good - ONGs {% endblock %}
 
 {% block header %}
 <header>
@@ -18,13 +18,12 @@
     <li><a href="/webshare/asociaciones" target="_self" title="Asociaciones"><img src="/static/img/boton_asociaciones.png" width=48 height=48></a></li>
     <li><a href="/webshare/investigadores" target="_self" title="Investigadores"><img src={% static "img/boton_investigadores.png" %} width=48 height=48></a></li>
     <li><a href="/webshare/ong" target="_self" title="ONG"><img src={% static "img/boton_ONG.png" %} width=48 height=48></a></li>
-    <li><a href="/webshare/ong" target="_self" title="ONG"><img src={% static "img/boton_ONG.png" %} width=48 height=48></a></li>
 </ul>
 </nav>
 {% endblock %}
 
 {% block elem1 %}
-<h1 class="quienessomos1">Asociaciones</h1>
+<h1 class="quienessomos1">ONG</h1>
 
 <div id="about_info" class="font">
 <p>Si eres una ONG dedicada a la cooperación al desarrollo, este es tu sitio. Aquí tendrás, con la misma filosofía que en el ámbito médico, un apartado en el que poder subir los proyectos de ingeniería que queráis realizar (bien para conseguir financiación, o directamente un profesional del sector que esté dispuesto a colaborar).</p>
@@ -36,7 +35,6 @@
 {% endblock %}
 
 {% block elem2 %}
-<div class="center" id="registro_bot"><img src={% static "img/registro.png" %} width=250></div>
 <hr>
 </div>
 

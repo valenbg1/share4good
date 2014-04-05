@@ -6,5 +6,6 @@ urlpatterns = patterns('',
     url(r'^asociaciones/$', 'webshare.views.asociaciones'),
     url(r'^investigadores/$', 'webshare.views.investigadores'),
     url(r'^empresa/$', 'webshare.views.empresa'),
-    url(r'^ingenieros/$', 'webshare.views.ingenieros')
+    url(r'^ingenieros/$', 'webshare.views.ingenieros'),
+    url(r'^ong/$', 'webshare.views.ong'),
 ) 
