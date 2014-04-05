@@ -4,11 +4,20 @@
 <html>
 <head>
     <title></title>
-    <link rel='stylesheet' type='text/css' href="/static/style.css" />
+    <link rel='stylesheet' type='text/css' href={% static "style.css" %} />
 </head>
 <body>
 <div id="container">
 {% block header %}  {% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block elem1 %} {% endblock %}
+
+{% block elem2 %} {% endblock %}
+
+{% block elem3 %} {% endblock %}
 
 {% block footer %} {% endblock %}
 </div>
